@@ -34,10 +34,7 @@ namespace Funeraria_Descanso_Eterno
             frm_NuevoCliente.ShowDialog();
             this.Show();
 
-            //pruba de lina DAvid gay
-            //segunda pruba jaja
-
-            MessageBox.Show("Hola, soy un mensaje de prueba");
+            //Prueba de commit
         }
 
         private void btn_EliminarC_Click(object sender, EventArgs e)
