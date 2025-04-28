@@ -36,6 +36,8 @@ namespace Funeraria_Descanso_Eterno
 
             //pruba de lina DAvid gay
             //segunda pruba jaja
+
+            MessageBox.Show("Hola, soy un mensaje de prueba");
         }
 
         private void btn_EliminarC_Click(object sender, EventArgs e)
