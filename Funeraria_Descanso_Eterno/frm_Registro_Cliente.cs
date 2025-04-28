@@ -33,6 +33,8 @@ namespace Funeraria_Descanso_Eterno
             this.Hide();
             frm_NuevoCliente.ShowDialog();
             this.Show();
+
+            //pruba de lina DAvid gay
         }
 
         private void btn_EliminarC_Click(object sender, EventArgs e)
