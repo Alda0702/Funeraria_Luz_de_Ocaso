@@ -32,5 +32,12 @@ namespace Funeraria_Descanso_Eterno
             frm_E_Empleado.ShowDialog();
             this.Show();
         }
+
+
+        // Alda boba
+        private void dtg_Empleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
