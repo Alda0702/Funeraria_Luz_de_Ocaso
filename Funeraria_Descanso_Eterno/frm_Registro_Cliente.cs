@@ -35,6 +35,7 @@ namespace Funeraria_Descanso_Eterno
             this.Show();
 
             //Prueba de commit
+            //Prueba de commit 2
         }
 
         private void btn_EliminarC_Click(object sender, EventArgs e)
