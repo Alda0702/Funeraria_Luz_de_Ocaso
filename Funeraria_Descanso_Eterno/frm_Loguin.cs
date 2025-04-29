@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finisar.SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +59,11 @@ namespace Funeraria_Descanso_Eterno
         private void pnl_Titulo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

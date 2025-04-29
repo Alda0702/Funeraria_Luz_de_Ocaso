@@ -24,3 +24,31 @@ D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\F
 D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarProd.resources
 D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoServicio.resources
 D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarServ.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\bin\Debug\Funeraria_Descanso_Eterno.exe.config
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\bin\Debug\Funeraria_Descanso_Eterno.exe
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\bin\Debug\Funeraria_Descanso_Eterno.pdb
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.csproj.AssemblyReference.cache
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarCliente.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarEmpleado.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarProd.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_EliminarServ.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Empleados.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Facturacion.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Inicio.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Inventario.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Loguin.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Menu.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoCliente.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoEmpleado.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoProducto.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoServicio.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoUsario.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Proveedores.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Registro_Cliente.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_Servicios.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.Properties.Resources.resources
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.csproj.GenerateResource.cache
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funerari.16C97947.Up2Date
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.exe
+C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.pdb
