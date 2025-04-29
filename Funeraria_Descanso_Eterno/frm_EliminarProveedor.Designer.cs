@@ -1,6 +1,6 @@
 ﻿namespace Funeraria_Descanso_Eterno
 {
-    partial class frm_EliminarServ
+    partial class frm_EliminarProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,10 @@
             this.pnl_EliminarE = new System.Windows.Forms.Panel();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Eliminar = new System.Windows.Forms.Button();
-            this.lbl_ImprimirNomServ = new System.Windows.Forms.Label();
-            this.lbl_ImprimirCodServ = new System.Windows.Forms.Label();
+            this.lbl_ImprimirNomProv = new System.Windows.Forms.Label();
+            this.lbl_ImprimirCodProv = new System.Windows.Forms.Label();
             this.lbl_Cod = new System.Windows.Forms.Label();
-            this.lbl_NomServ = new System.Windows.Forms.Label();
+            this.lbl_NomProv = new System.Windows.Forms.Label();
             this.lbl_Buscar = new System.Windows.Forms.Label();
             this.lbl_Elim = new System.Windows.Forms.Label();
             this.txt_Buscar = new System.Windows.Forms.TextBox();
@@ -56,17 +56,17 @@
             this.pnl_EliminarE.BackColor = System.Drawing.Color.White;
             this.pnl_EliminarE.Controls.Add(this.btn_Cancelar);
             this.pnl_EliminarE.Controls.Add(this.btn_Eliminar);
-            this.pnl_EliminarE.Controls.Add(this.lbl_ImprimirNomServ);
-            this.pnl_EliminarE.Controls.Add(this.lbl_ImprimirCodServ);
+            this.pnl_EliminarE.Controls.Add(this.lbl_ImprimirNomProv);
+            this.pnl_EliminarE.Controls.Add(this.lbl_ImprimirCodProv);
             this.pnl_EliminarE.Controls.Add(this.lbl_Cod);
-            this.pnl_EliminarE.Controls.Add(this.lbl_NomServ);
+            this.pnl_EliminarE.Controls.Add(this.lbl_NomProv);
             this.pnl_EliminarE.Controls.Add(this.lbl_Buscar);
             this.pnl_EliminarE.Controls.Add(this.lbl_Elim);
             this.pnl_EliminarE.Controls.Add(this.txt_Buscar);
-            this.pnl_EliminarE.Location = new System.Drawing.Point(12, 47);
+            this.pnl_EliminarE.Location = new System.Drawing.Point(12, 46);
             this.pnl_EliminarE.Name = "pnl_EliminarE";
             this.pnl_EliminarE.Size = new System.Drawing.Size(426, 359);
-            this.pnl_EliminarE.TabIndex = 9;
+            this.pnl_EliminarE.TabIndex = 11;
             // 
             // btn_Cancelar
             // 
@@ -97,25 +97,25 @@
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = false;
             // 
-            // lbl_ImprimirNomServ
+            // lbl_ImprimirNomProv
             // 
-            this.lbl_ImprimirNomServ.AutoSize = true;
-            this.lbl_ImprimirNomServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ImprimirNomServ.Location = new System.Drawing.Point(123, 151);
-            this.lbl_ImprimirNomServ.Name = "lbl_ImprimirNomServ";
-            this.lbl_ImprimirNomServ.Size = new System.Drawing.Size(16, 21);
-            this.lbl_ImprimirNomServ.TabIndex = 22;
-            this.lbl_ImprimirNomServ.Text = "-";
+            this.lbl_ImprimirNomProv.AutoSize = true;
+            this.lbl_ImprimirNomProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ImprimirNomProv.Location = new System.Drawing.Point(123, 151);
+            this.lbl_ImprimirNomProv.Name = "lbl_ImprimirNomProv";
+            this.lbl_ImprimirNomProv.Size = new System.Drawing.Size(16, 21);
+            this.lbl_ImprimirNomProv.TabIndex = 22;
+            this.lbl_ImprimirNomProv.Text = "-";
             // 
-            // lbl_ImprimirCodServ
+            // lbl_ImprimirCodProv
             // 
-            this.lbl_ImprimirCodServ.AutoSize = true;
-            this.lbl_ImprimirCodServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ImprimirCodServ.Location = new System.Drawing.Point(123, 120);
-            this.lbl_ImprimirCodServ.Name = "lbl_ImprimirCodServ";
-            this.lbl_ImprimirCodServ.Size = new System.Drawing.Size(16, 21);
-            this.lbl_ImprimirCodServ.TabIndex = 21;
-            this.lbl_ImprimirCodServ.Text = "-";
+            this.lbl_ImprimirCodProv.AutoSize = true;
+            this.lbl_ImprimirCodProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ImprimirCodProv.Location = new System.Drawing.Point(123, 120);
+            this.lbl_ImprimirCodProv.Name = "lbl_ImprimirCodProv";
+            this.lbl_ImprimirCodProv.Size = new System.Drawing.Size(16, 21);
+            this.lbl_ImprimirCodProv.TabIndex = 21;
+            this.lbl_ImprimirCodProv.Text = "-";
             // 
             // lbl_Cod
             // 
@@ -127,15 +127,15 @@
             this.lbl_Cod.TabIndex = 20;
             this.lbl_Cod.Text = "Código:";
             // 
-            // lbl_NomServ
+            // lbl_NomProv
             // 
-            this.lbl_NomServ.AutoSize = true;
-            this.lbl_NomServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NomServ.Location = new System.Drawing.Point(29, 151);
-            this.lbl_NomServ.Name = "lbl_NomServ";
-            this.lbl_NomServ.Size = new System.Drawing.Size(71, 21);
-            this.lbl_NomServ.TabIndex = 8;
-            this.lbl_NomServ.Text = "Nombre:";
+            this.lbl_NomProv.AutoSize = true;
+            this.lbl_NomProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NomProv.Location = new System.Drawing.Point(29, 151);
+            this.lbl_NomProv.Name = "lbl_NomProv";
+            this.lbl_NomProv.Size = new System.Drawing.Size(71, 21);
+            this.lbl_NomProv.TabIndex = 8;
+            this.lbl_NomProv.Text = "Nombre:";
             // 
             // lbl_Buscar
             // 
@@ -154,11 +154,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Elim.AutoSize = true;
             this.lbl_Elim.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Elim.Location = new System.Drawing.Point(95, 9);
+            this.lbl_Elim.Location = new System.Drawing.Point(89, 9);
             this.lbl_Elim.Name = "lbl_Elim";
-            this.lbl_Elim.Size = new System.Drawing.Size(232, 37);
+            this.lbl_Elim.Size = new System.Drawing.Size(264, 37);
             this.lbl_Elim.TabIndex = 4;
-            this.lbl_Elim.Text = "Eliminar Servicio";
+            this.lbl_Elim.Text = "Eliminar Proveedor";
             // 
             // txt_Buscar
             // 
@@ -179,7 +179,7 @@
             this.pnl_Titulo.Location = new System.Drawing.Point(0, 0);
             this.pnl_Titulo.Name = "pnl_Titulo";
             this.pnl_Titulo.Size = new System.Drawing.Size(450, 38);
-            this.pnl_Titulo.TabIndex = 8;
+            this.pnl_Titulo.TabIndex = 10;
             // 
             // pic_Restaurar
             // 
@@ -232,7 +232,7 @@
             this.pic_Cerrar.TabStop = false;
             this.pic_Cerrar.Click += new System.EventHandler(this.pic_Cerrar_Click);
             // 
-            // frm_EliminarServ
+            // frm_EliminarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,9 +240,8 @@
             this.Controls.Add(this.pnl_EliminarE);
             this.Controls.Add(this.pnl_Titulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_EliminarServ";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_EliminarServ";
+            this.Name = "frm_EliminarProveedor";
+            this.Text = "frm_EliminarProveedor";
             this.pnl_EliminarE.ResumeLayout(false);
             this.pnl_EliminarE.PerformLayout();
             this.pnl_Titulo.ResumeLayout(false);
@@ -259,10 +258,10 @@
         private System.Windows.Forms.Panel pnl_EliminarE;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Eliminar;
-        private System.Windows.Forms.Label lbl_ImprimirNomServ;
-        private System.Windows.Forms.Label lbl_ImprimirCodServ;
+        private System.Windows.Forms.Label lbl_ImprimirNomProv;
+        private System.Windows.Forms.Label lbl_ImprimirCodProv;
         private System.Windows.Forms.Label lbl_Cod;
-        private System.Windows.Forms.Label lbl_NomServ;
+        private System.Windows.Forms.Label lbl_NomProv;
         private System.Windows.Forms.Label lbl_Buscar;
         private System.Windows.Forms.Label lbl_Elim;
         private System.Windows.Forms.TextBox txt_Buscar;

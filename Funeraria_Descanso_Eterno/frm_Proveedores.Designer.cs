@@ -34,15 +34,15 @@
             this.lbl_BuscarProv = new System.Windows.Forms.Label();
             this.txt_BuscarProv = new System.Windows.Forms.TextBox();
             this.dtg_Proveedores = new System.Windows.Forms.DataGridView();
-            this.btn_EliminarProv = new System.Windows.Forms.Button();
-            this.btn_ActualizarProv = new System.Windows.Forms.Button();
-            this.btn_NuevoProv = new System.Windows.Forms.Button();
-            this.pnl_BuscarProv = new System.Windows.Forms.Panel();
             this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_EliminarProv = new System.Windows.Forms.Button();
+            this.btn_ActualizarProv = new System.Windows.Forms.Button();
+            this.btn_NuevoProv = new System.Windows.Forms.Button();
+            this.pnl_BuscarProv = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Proveedores)).BeginInit();
             this.pnl_BuscarProv.SuspendLayout();
             this.SuspendLayout();
@@ -115,60 +115,6 @@
             this.dtg_Proveedores.Size = new System.Drawing.Size(1076, 420);
             this.dtg_Proveedores.TabIndex = 16;
             // 
-            // btn_EliminarProv
-            // 
-            this.btn_EliminarProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_EliminarProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(76)))), ((int)(((byte)(70)))));
-            this.btn_EliminarProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EliminarProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EliminarProv.ForeColor = System.Drawing.Color.White;
-            this.btn_EliminarProv.Location = new System.Drawing.Point(594, 123);
-            this.btn_EliminarProv.Name = "btn_EliminarProv";
-            this.btn_EliminarProv.Size = new System.Drawing.Size(254, 42);
-            this.btn_EliminarProv.TabIndex = 15;
-            this.btn_EliminarProv.Text = "Eliminar Proveedor";
-            this.btn_EliminarProv.UseVisualStyleBackColor = false;
-            // 
-            // btn_ActualizarProv
-            // 
-            this.btn_ActualizarProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_ActualizarProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(209)))));
-            this.btn_ActualizarProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ActualizarProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ActualizarProv.ForeColor = System.Drawing.Color.White;
-            this.btn_ActualizarProv.Location = new System.Drawing.Point(422, 123);
-            this.btn_ActualizarProv.Name = "btn_ActualizarProv";
-            this.btn_ActualizarProv.Size = new System.Drawing.Size(166, 42);
-            this.btn_ActualizarProv.TabIndex = 14;
-            this.btn_ActualizarProv.Text = "Actualizar Proveedor";
-            this.btn_ActualizarProv.UseVisualStyleBackColor = false;
-            // 
-            // btn_NuevoProv
-            // 
-            this.btn_NuevoProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_NuevoProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(139)))), ((int)(((byte)(123)))));
-            this.btn_NuevoProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NuevoProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NuevoProv.ForeColor = System.Drawing.Color.White;
-            this.btn_NuevoProv.Location = new System.Drawing.Point(252, 123);
-            this.btn_NuevoProv.Name = "btn_NuevoProv";
-            this.btn_NuevoProv.Size = new System.Drawing.Size(164, 42);
-            this.btn_NuevoProv.TabIndex = 13;
-            this.btn_NuevoProv.Text = "+ Nuevo Proveedor";
-            this.btn_NuevoProv.UseVisualStyleBackColor = false;
-            // 
-            // pnl_BuscarProv
-            // 
-            this.pnl_BuscarProv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_BuscarProv.BackColor = System.Drawing.Color.White;
-            this.pnl_BuscarProv.Controls.Add(this.lbl_BuscarProv);
-            this.pnl_BuscarProv.Controls.Add(this.txt_BuscarProv);
-            this.pnl_BuscarProv.Location = new System.Drawing.Point(25, 12);
-            this.pnl_BuscarProv.Name = "pnl_BuscarProv";
-            this.pnl_BuscarProv.Size = new System.Drawing.Size(1046, 93);
-            this.pnl_BuscarProv.TabIndex = 12;
-            // 
             // Cod
             // 
             this.Cod.HeaderText = "Codigo";
@@ -203,6 +149,62 @@
             this.Ciudad.Name = "Ciudad";
             this.Ciudad.ReadOnly = true;
             this.Ciudad.Width = 150;
+            // 
+            // btn_EliminarProv
+            // 
+            this.btn_EliminarProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_EliminarProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(76)))), ((int)(((byte)(70)))));
+            this.btn_EliminarProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_EliminarProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EliminarProv.ForeColor = System.Drawing.Color.White;
+            this.btn_EliminarProv.Location = new System.Drawing.Point(594, 123);
+            this.btn_EliminarProv.Name = "btn_EliminarProv";
+            this.btn_EliminarProv.Size = new System.Drawing.Size(254, 42);
+            this.btn_EliminarProv.TabIndex = 15;
+            this.btn_EliminarProv.Text = "Eliminar Proveedor";
+            this.btn_EliminarProv.UseVisualStyleBackColor = false;
+            this.btn_EliminarProv.Click += new System.EventHandler(this.btn_EliminarProv_Click);
+            // 
+            // btn_ActualizarProv
+            // 
+            this.btn_ActualizarProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_ActualizarProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(209)))));
+            this.btn_ActualizarProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ActualizarProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ActualizarProv.ForeColor = System.Drawing.Color.White;
+            this.btn_ActualizarProv.Location = new System.Drawing.Point(422, 123);
+            this.btn_ActualizarProv.Name = "btn_ActualizarProv";
+            this.btn_ActualizarProv.Size = new System.Drawing.Size(166, 42);
+            this.btn_ActualizarProv.TabIndex = 14;
+            this.btn_ActualizarProv.Text = "Actualizar Proveedor";
+            this.btn_ActualizarProv.UseVisualStyleBackColor = false;
+            // 
+            // btn_NuevoProv
+            // 
+            this.btn_NuevoProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_NuevoProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(139)))), ((int)(((byte)(123)))));
+            this.btn_NuevoProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_NuevoProv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NuevoProv.ForeColor = System.Drawing.Color.White;
+            this.btn_NuevoProv.Location = new System.Drawing.Point(252, 123);
+            this.btn_NuevoProv.Name = "btn_NuevoProv";
+            this.btn_NuevoProv.Size = new System.Drawing.Size(164, 42);
+            this.btn_NuevoProv.TabIndex = 13;
+            this.btn_NuevoProv.Text = "+ Nuevo Proveedor";
+            this.btn_NuevoProv.UseVisualStyleBackColor = false;
+            this.btn_NuevoProv.Click += new System.EventHandler(this.btn_NuevoProv_Click);
+            // 
+            // pnl_BuscarProv
+            // 
+            this.pnl_BuscarProv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_BuscarProv.BackColor = System.Drawing.Color.White;
+            this.pnl_BuscarProv.Controls.Add(this.lbl_BuscarProv);
+            this.pnl_BuscarProv.Controls.Add(this.txt_BuscarProv);
+            this.pnl_BuscarProv.Location = new System.Drawing.Point(25, 12);
+            this.pnl_BuscarProv.Name = "pnl_BuscarProv";
+            this.pnl_BuscarProv.Size = new System.Drawing.Size(1046, 93);
+            this.pnl_BuscarProv.TabIndex = 12;
             // 
             // frm_Proveedores
             // 
