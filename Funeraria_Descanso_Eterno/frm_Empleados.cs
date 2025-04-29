@@ -19,6 +19,7 @@ namespace Funeraria_Descanso_Eterno
 
         private void btn_NuevoE_Click(object sender, EventArgs e)
         {
+           
             frm_NuevoEmpleado frm_N_Empleado = new frm_NuevoEmpleado();
             this.Hide();
             frm_N_Empleado.ShowDialog();
@@ -34,7 +35,7 @@ namespace Funeraria_Descanso_Eterno
         }
 
 
-        // Alda boba
+        // Hola mundo
         private void dtg_Empleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
