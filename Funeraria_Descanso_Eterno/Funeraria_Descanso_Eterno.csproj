@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_AbrirForm.cs" />
+    <Compile Include="Cls_CondicionalesFormulario.cs" />
     <Compile Include="frm_EliminarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
