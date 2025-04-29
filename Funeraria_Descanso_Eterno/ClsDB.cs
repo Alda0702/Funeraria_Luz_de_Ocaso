@@ -39,6 +39,10 @@ namespace Funeraria_Descanso_Eterno
             MessageBox.Show("Conectando a la base de datos return");
             return conexion;
         }
+
+
+
+
     }
 
 
@@ -46,24 +50,14 @@ namespace Funeraria_Descanso_Eterno
     {
         public void CreateTable()
         {
-            try
-            {
-
-                SQLiteConnection conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion(); ;
-                SQLiteCommand cmd_sqlite;
-                SQLiteDataReader datareader_sqlite;
-
-                conexion_sqlite.Open();
-
-                /////creo la tabla -------------------------------------------------------------------
-                cmd_sqlite = conexion_sqlite.CreateCommand();
-                cmd_sqlite.CommandText = "CREATE TABLE Users(ID_User integer primary key, Nombre varchar(20), usuario varchar(25), password varchar(25));";
-                cmd_sqlite.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-            }
+                try
+                {
+                    //creacion de tablas termanda hasta el momento
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
 
         }
     }

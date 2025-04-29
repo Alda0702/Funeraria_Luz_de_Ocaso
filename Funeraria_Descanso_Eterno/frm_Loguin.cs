@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Finisar.SQLite;
 
 namespace Funeraria_Descanso_Eterno
 {
@@ -63,7 +64,10 @@ namespace Funeraria_Descanso_Eterno
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            AddTables addTables = new AddTables();
+            addTables.CreateTable();
+
+
         }
     }
 }
