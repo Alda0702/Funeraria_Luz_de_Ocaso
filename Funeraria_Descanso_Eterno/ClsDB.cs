@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Finisar.SQLite;
 using System;
-using System.Data.SQLite;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -59,16 +58,42 @@ namespace Funeraria_Descanso_Eterno
         public void InsertarCliente(string Nombre, string Descripcion, string Categoria, int DuracioEst, int Precio)
         {
 
-            conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
-            //open?
-
-            cmd_sqlite = conexion_sqlite.CreateCommand();
-            cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, ) VALUES ('{Nombre}','{Descripcion}', '{Categoria}')";
-            cmd_sqlite.ExecuteNonQuery();
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
 
 
+                cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, Descripcion_P, Categoria_P, Duracion_estimadaHrs_P, Precio_P)VALUES  ('{Nombre}','{Descripcion}', '{Categoria} ', ' {DuracioEst}' ,  {Precio})";
+                cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar el cliente: " + ex.Message);
+            }
         }
     }
 
+    public class Inventario
+    {
+        SQLiteConnection conexion_sqlite;
+        SQLiteCommand cmd_sqlite;
+        public void InsertarProducto(string Nombre, string Descripcion, string Categoria, int Stock, int Precio)
+        {
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+            cmd_sqlite = conexion_sqlite.CreateCommand();
+
+            cmd_sqlite.CommandText = $"INSERT INTO Inventario (Nombre_P, Descripcion_P, Categoria_P, Stock_P, Precio_P)VALUES  ('{Nombre}','{Descripcion}', '{Categoria} ', ' {Stock}' ,  {Precio})";
+            cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar el Producto: " + ex.Message);
+            }
+        }
+
+    }
 }
 

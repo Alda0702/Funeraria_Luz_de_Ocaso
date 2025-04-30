@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.pnl_Titulo = new System.Windows.Forms.Panel();
+            this.pic_Restaurar = new System.Windows.Forms.PictureBox();
+            this.pic_Minimizar = new System.Windows.Forms.PictureBox();
+            this.pic_Redimencionar = new System.Windows.Forms.PictureBox();
+            this.pic_Cerrar = new System.Windows.Forms.PictureBox();
             this.lbl_Regis = new System.Windows.Forms.Label();
             this.lbl_Inf = new System.Windows.Forms.Label();
             this.txt_NomProd = new System.Windows.Forms.TextBox();
@@ -46,16 +50,12 @@
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.pnl_NuevoCl = new System.Windows.Forms.Panel();
             this.tx_PrecioProd = new System.Windows.Forms.TextBox();
-            this.pic_Restaurar = new System.Windows.Forms.PictureBox();
-            this.pic_Minimizar = new System.Windows.Forms.PictureBox();
-            this.pic_Redimencionar = new System.Windows.Forms.PictureBox();
-            this.pic_Cerrar = new System.Windows.Forms.PictureBox();
             this.pnl_Titulo.SuspendLayout();
-            this.pnl_NuevoCl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Redimencionar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cerrar)).BeginInit();
+            this.pnl_NuevoCl.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Titulo
@@ -70,6 +70,57 @@
             this.pnl_Titulo.Name = "pnl_Titulo";
             this.pnl_Titulo.Size = new System.Drawing.Size(1100, 38);
             this.pnl_Titulo.TabIndex = 6;
+            // 
+            // pic_Restaurar
+            // 
+            this.pic_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_Restaurar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.res;
+            this.pic_Restaurar.Location = new System.Drawing.Point(1032, 7);
+            this.pic_Restaurar.Name = "pic_Restaurar";
+            this.pic_Restaurar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Restaurar.TabIndex = 2;
+            this.pic_Restaurar.TabStop = false;
+            this.pic_Restaurar.Visible = false;
+            // 
+            // pic_Minimizar
+            // 
+            this.pic_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_Minimizar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.minimazar;
+            this.pic_Minimizar.Location = new System.Drawing.Point(991, 7);
+            this.pic_Minimizar.Name = "pic_Minimizar";
+            this.pic_Minimizar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Minimizar.TabIndex = 2;
+            this.pic_Minimizar.TabStop = false;
+            this.pic_Minimizar.Click += new System.EventHandler(this.pic_Minimizar_Click);
+            // 
+            // pic_Redimencionar
+            // 
+            this.pic_Redimencionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_Redimencionar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_Redimencionar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.maxi;
+            this.pic_Redimencionar.Location = new System.Drawing.Point(1032, 7);
+            this.pic_Redimencionar.Name = "pic_Redimencionar";
+            this.pic_Redimencionar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Redimencionar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Redimencionar.TabIndex = 1;
+            this.pic_Redimencionar.TabStop = false;
+            // 
+            // pic_Cerrar
+            // 
+            this.pic_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_Cerrar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.cerrar;
+            this.pic_Cerrar.Location = new System.Drawing.Point(1072, 7);
+            this.pic_Cerrar.Name = "pic_Cerrar";
+            this.pic_Cerrar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Cerrar.TabIndex = 0;
+            this.pic_Cerrar.TabStop = false;
+            this.pic_Cerrar.Click += new System.EventHandler(this.pic_Cerrar_Click);
             // 
             // lbl_Regis
             // 
@@ -211,8 +262,9 @@
             this.btn_Confirmar.Name = "btn_Confirmar";
             this.btn_Confirmar.Size = new System.Drawing.Size(164, 42);
             this.btn_Confirmar.TabIndex = 4;
-            this.btn_Confirmar.Text = "Reistrar Empleado";
+            this.btn_Confirmar.Text = "Reistrar Producto";
             this.btn_Confirmar.UseVisualStyleBackColor = false;
+            this.btn_Confirmar.Click += new System.EventHandler(this.btn_Confirmar_Click);
             // 
             // btn_Cancelar
             // 
@@ -265,57 +317,6 @@
             this.tx_PrecioProd.TabIndex = 35;
             this.tx_PrecioProd.TextChanged += new System.EventHandler(this.tx_PrecioProd_TextChanged);
             // 
-            // pic_Restaurar
-            // 
-            this.pic_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_Restaurar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.res;
-            this.pic_Restaurar.Location = new System.Drawing.Point(1032, 7);
-            this.pic_Restaurar.Name = "pic_Restaurar";
-            this.pic_Restaurar.Size = new System.Drawing.Size(25, 25);
-            this.pic_Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_Restaurar.TabIndex = 2;
-            this.pic_Restaurar.TabStop = false;
-            this.pic_Restaurar.Visible = false;
-            // 
-            // pic_Minimizar
-            // 
-            this.pic_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_Minimizar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.minimazar;
-            this.pic_Minimizar.Location = new System.Drawing.Point(991, 7);
-            this.pic_Minimizar.Name = "pic_Minimizar";
-            this.pic_Minimizar.Size = new System.Drawing.Size(25, 25);
-            this.pic_Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_Minimizar.TabIndex = 2;
-            this.pic_Minimizar.TabStop = false;
-            this.pic_Minimizar.Click += new System.EventHandler(this.pic_Minimizar_Click);
-            // 
-            // pic_Redimencionar
-            // 
-            this.pic_Redimencionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_Redimencionar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_Redimencionar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.maxi;
-            this.pic_Redimencionar.Location = new System.Drawing.Point(1032, 7);
-            this.pic_Redimencionar.Name = "pic_Redimencionar";
-            this.pic_Redimencionar.Size = new System.Drawing.Size(25, 25);
-            this.pic_Redimencionar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_Redimencionar.TabIndex = 1;
-            this.pic_Redimencionar.TabStop = false;
-            // 
-            // pic_Cerrar
-            // 
-            this.pic_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_Cerrar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.cerrar;
-            this.pic_Cerrar.Location = new System.Drawing.Point(1072, 7);
-            this.pic_Cerrar.Name = "pic_Cerrar";
-            this.pic_Cerrar.Size = new System.Drawing.Size(25, 25);
-            this.pic_Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_Cerrar.TabIndex = 0;
-            this.pic_Cerrar.TabStop = false;
-            this.pic_Cerrar.Click += new System.EventHandler(this.pic_Cerrar_Click);
-            // 
             // frm_NuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,12 +330,12 @@
             this.Text = "frm_NuevoProducto";
             this.Load += new System.EventHandler(this.frm_NuevoProducto_Load);
             this.pnl_Titulo.ResumeLayout(false);
-            this.pnl_NuevoCl.ResumeLayout(false);
-            this.pnl_NuevoCl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Redimencionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cerrar)).EndInit();
+            this.pnl_NuevoCl.ResumeLayout(false);
+            this.pnl_NuevoCl.PerformLayout();
             this.ResumeLayout(false);
 
         }

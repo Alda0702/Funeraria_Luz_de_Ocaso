@@ -194,9 +194,9 @@
             this.lbl_Regis.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Regis.Location = new System.Drawing.Point(179, 7);
             this.lbl_Regis.Name = "lbl_Regis";
-            this.lbl_Regis.Size = new System.Drawing.Size(260, 37);
+            this.lbl_Regis.Size = new System.Drawing.Size(278, 37);
             this.lbl_Regis.TabIndex = 3;
-            this.lbl_Regis.Text = "Registrar Producto";
+            this.lbl_Regis.Text = "Registrar Proovedor";
             // 
             // pic_Restaurar
             // 
