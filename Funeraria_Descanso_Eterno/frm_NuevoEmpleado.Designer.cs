@@ -48,6 +48,7 @@
             this.pic_Cerrar = new System.Windows.Forms.PictureBox();
             this.lbl_Tdoc = new System.Windows.Forms.Label();
             this.pnl_NuevoCl = new System.Windows.Forms.Panel();
+            this.cmb_Rol = new System.Windows.Forms.ComboBox();
             this.lbl_Domicilio = new System.Windows.Forms.Label();
             this.lbl_Decoracion = new System.Windows.Forms.Label();
             this.cmb_Sexo = new System.Windows.Forms.ComboBox();
@@ -64,7 +65,6 @@
             this.lbl_Regis = new System.Windows.Forms.Label();
             this.pnl_Titulo = new System.Windows.Forms.Panel();
             this.pic_Redimencionar = new System.Windows.Forms.PictureBox();
-            this.cmb_Rol = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cerrar)).BeginInit();
@@ -114,6 +114,7 @@
             this.btn_Confirmar.TabIndex = 4;
             this.btn_Confirmar.Text = "Reistrar Empleado";
             this.btn_Confirmar.UseVisualStyleBackColor = false;
+            this.btn_Confirmar.Click += new System.EventHandler(this.btn_Confirmar_Click);
             // 
             // txt_Email
             // 
@@ -314,6 +315,22 @@
             this.pnl_NuevoCl.Name = "pnl_NuevoCl";
             this.pnl_NuevoCl.Size = new System.Drawing.Size(613, 556);
             this.pnl_NuevoCl.TabIndex = 5;
+            this.pnl_NuevoCl.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_NuevoCl_Paint);
+            // 
+            // cmb_Rol
+            // 
+            this.cmb_Rol.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Rol.FormattingEnabled = true;
+            this.cmb_Rol.Items.AddRange(new object[] {
+            "Vendedor",
+            "Logística",
+            "RRHH",
+            "Contratador"});
+            this.cmb_Rol.Location = new System.Drawing.Point(427, 50);
+            this.cmb_Rol.Name = "cmb_Rol";
+            this.cmb_Rol.Size = new System.Drawing.Size(143, 29);
+            this.cmb_Rol.TabIndex = 35;
+            this.cmb_Rol.SelectedIndexChanged += new System.EventHandler(this.cmb_Rol_SelectedIndexChanged);
             // 
             // lbl_Domicilio
             // 
@@ -477,15 +494,6 @@
             this.pic_Redimencionar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Redimencionar.TabIndex = 1;
             this.pic_Redimencionar.TabStop = false;
-            // 
-            // cmb_Rol
-            // 
-            this.cmb_Rol.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_Rol.FormattingEnabled = true;
-            this.cmb_Rol.Location = new System.Drawing.Point(427, 50);
-            this.cmb_Rol.Name = "cmb_Rol";
-            this.cmb_Rol.Size = new System.Drawing.Size(143, 29);
-            this.cmb_Rol.TabIndex = 35;
             // 
             // frm_NuevoEmpleado
             // 

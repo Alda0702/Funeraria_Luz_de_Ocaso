@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsDB.cs" />
+    <Compile Include="ClsEmpleado.cs" />
     <Compile Include="Cls_AbrirForm.cs" />
     <Compile Include="frm_EliminarCliente.cs">
       <SubType>Form</SubType>
@@ -163,6 +164,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClsUser.cs" />
     <EmbeddedResource Include="frm_EliminarCliente.resx">
       <DependentUpon>frm_EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>

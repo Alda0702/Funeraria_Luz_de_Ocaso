@@ -57,8 +57,9 @@
             this.pnl_Titulo.Controls.Add(this.pic_Cerrar);
             this.pnl_Titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Titulo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Titulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_Titulo.Name = "pnl_Titulo";
-            this.pnl_Titulo.Size = new System.Drawing.Size(1300, 38);
+            this.pnl_Titulo.Size = new System.Drawing.Size(1733, 47);
             this.pnl_Titulo.TabIndex = 4;
             // 
             // pic_Restaurar
@@ -66,9 +67,10 @@
             this.pic_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_Restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Restaurar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.res;
-            this.pic_Restaurar.Location = new System.Drawing.Point(1232, 7);
+            this.pic_Restaurar.Location = new System.Drawing.Point(1643, 9);
+            this.pic_Restaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pic_Restaurar.Name = "pic_Restaurar";
-            this.pic_Restaurar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Restaurar.Size = new System.Drawing.Size(33, 31);
             this.pic_Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Restaurar.TabIndex = 2;
             this.pic_Restaurar.TabStop = false;
@@ -79,9 +81,10 @@
             this.pic_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Minimizar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.minimazar;
-            this.pic_Minimizar.Location = new System.Drawing.Point(1191, 7);
+            this.pic_Minimizar.Location = new System.Drawing.Point(1588, 9);
+            this.pic_Minimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pic_Minimizar.Name = "pic_Minimizar";
-            this.pic_Minimizar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Minimizar.Size = new System.Drawing.Size(33, 31);
             this.pic_Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Minimizar.TabIndex = 2;
             this.pic_Minimizar.TabStop = false;
@@ -92,9 +95,10 @@
             this.pic_Redimencionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_Redimencionar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Redimencionar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.maxi;
-            this.pic_Redimencionar.Location = new System.Drawing.Point(1232, 7);
+            this.pic_Redimencionar.Location = new System.Drawing.Point(1643, 9);
+            this.pic_Redimencionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pic_Redimencionar.Name = "pic_Redimencionar";
-            this.pic_Redimencionar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Redimencionar.Size = new System.Drawing.Size(33, 31);
             this.pic_Redimencionar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Redimencionar.TabIndex = 1;
             this.pic_Redimencionar.TabStop = false;
@@ -104,9 +108,10 @@
             this.pic_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_Cerrar.Image = global::Funeraria_Descanso_Eterno.Properties.Resources.cerrar;
-            this.pic_Cerrar.Location = new System.Drawing.Point(1272, 7);
+            this.pic_Cerrar.Location = new System.Drawing.Point(1696, 9);
+            this.pic_Cerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pic_Cerrar.Name = "pic_Cerrar";
-            this.pic_Cerrar.Size = new System.Drawing.Size(25, 25);
+            this.pic_Cerrar.Size = new System.Drawing.Size(33, 31);
             this.pic_Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Cerrar.TabIndex = 0;
             this.pic_Cerrar.TabStop = false;
@@ -119,12 +124,14 @@
             this.btn_Siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Siguiente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Siguiente.ForeColor = System.Drawing.Color.White;
-            this.btn_Siguiente.Location = new System.Drawing.Point(48, 306);
+            this.btn_Siguiente.Location = new System.Drawing.Point(64, 377);
+            this.btn_Siguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Siguiente.Name = "btn_Siguiente";
-            this.btn_Siguiente.Size = new System.Drawing.Size(331, 33);
+            this.btn_Siguiente.Size = new System.Drawing.Size(441, 41);
             this.btn_Siguiente.TabIndex = 2;
             this.btn_Siguiente.Text = "Registrar Usuario";
             this.btn_Siguiente.UseVisualStyleBackColor = false;
+            this.btn_Siguiente.Click += new System.EventHandler(this.btn_Siguiente_Click);
             // 
             // pnl_Loguin
             // 
@@ -138,10 +145,12 @@
             this.pnl_Loguin.Controls.Add(this.lbl_Pass);
             this.pnl_Loguin.Controls.Add(this.lbl_Usuario);
             this.pnl_Loguin.Controls.Add(this.lbl_Registrar);
-            this.pnl_Loguin.Location = new System.Drawing.Point(432, 133);
+            this.pnl_Loguin.Location = new System.Drawing.Point(576, 164);
+            this.pnl_Loguin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_Loguin.Name = "pnl_Loguin";
-            this.pnl_Loguin.Size = new System.Drawing.Size(424, 388);
+            this.pnl_Loguin.Size = new System.Drawing.Size(565, 478);
             this.pnl_Loguin.TabIndex = 5;
+            this.pnl_Loguin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Loguin_Paint);
             // 
             // txt_Pass
             // 
@@ -149,9 +158,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Pass.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pass.Location = new System.Drawing.Point(48, 236);
+            this.txt_Pass.Location = new System.Drawing.Point(64, 290);
+            this.txt_Pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Pass.Name = "txt_Pass";
-            this.txt_Pass.Size = new System.Drawing.Size(331, 33);
+            this.txt_Pass.Size = new System.Drawing.Size(440, 39);
             this.txt_Pass.TabIndex = 6;
             // 
             // txt_Usuario
@@ -160,9 +170,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Usuario.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Usuario.Location = new System.Drawing.Point(48, 142);
+            this.txt_Usuario.Location = new System.Drawing.Point(64, 175);
+            this.txt_Usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(331, 33);
+            this.txt_Usuario.Size = new System.Drawing.Size(440, 39);
             this.txt_Usuario.TabIndex = 5;
             // 
             // lbl_Pass
@@ -172,9 +183,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Pass.AutoSize = true;
             this.lbl_Pass.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Pass.Location = new System.Drawing.Point(43, 203);
+            this.lbl_Pass.Location = new System.Drawing.Point(57, 250);
+            this.lbl_Pass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Pass.Name = "lbl_Pass";
-            this.lbl_Pass.Size = new System.Drawing.Size(118, 30);
+            this.lbl_Pass.Size = new System.Drawing.Size(151, 37);
             this.lbl_Pass.TabIndex = 4;
             this.lbl_Pass.Text = "Contraseña";
             // 
@@ -185,9 +197,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Usuario.AutoSize = true;
             this.lbl_Usuario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Usuario.Location = new System.Drawing.Point(43, 109);
+            this.lbl_Usuario.Location = new System.Drawing.Point(57, 134);
+            this.lbl_Usuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Usuario.Name = "lbl_Usuario";
-            this.lbl_Usuario.Size = new System.Drawing.Size(83, 30);
+            this.lbl_Usuario.Size = new System.Drawing.Size(108, 37);
             this.lbl_Usuario.TabIndex = 3;
             this.lbl_Usuario.Text = "Usuario";
             // 
@@ -198,22 +211,25 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Registrar.AutoSize = true;
             this.lbl_Registrar.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Registrar.Location = new System.Drawing.Point(95, 32);
+            this.lbl_Registrar.Location = new System.Drawing.Point(127, 39);
+            this.lbl_Registrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Registrar.Name = "lbl_Registrar";
-            this.lbl_Registrar.Size = new System.Drawing.Size(240, 37);
+            this.lbl_Registrar.Size = new System.Drawing.Size(297, 46);
             this.lbl_Registrar.TabIndex = 2;
             this.lbl_Registrar.Text = "Registrar Usuario";
             // 
             // frm_NuevoUsario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 650);
+            this.ClientSize = new System.Drawing.Size(1733, 800);
             this.Controls.Add(this.pnl_Titulo);
             this.Controls.Add(this.pnl_Loguin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_NuevoUsario";
             this.Text = "frm_NuevoUsario";
+            this.Load += new System.EventHandler(this.frm_NuevoUsario_Load);
             this.pnl_Titulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Minimizar)).EndInit();
