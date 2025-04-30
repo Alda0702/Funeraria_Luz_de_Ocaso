@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finisar.SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Finisar.SQLite;
 
 namespace Funeraria_Descanso_Eterno
 {
@@ -57,6 +59,14 @@ namespace Funeraria_Descanso_Eterno
 
         private void pnl_Titulo_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddTables addTables = new AddTables();
+            addTables.CreateTable();
+
 
         }
     }
