@@ -356,6 +356,10 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
+
+# EXCEPCIÓN: No ignorar la base de datos en Debug
+!bin/Debug/mi_base.db
+
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
