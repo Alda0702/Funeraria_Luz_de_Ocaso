@@ -63,7 +63,7 @@
             this.pnl_EliminarE.Controls.Add(this.lbl_Buscar);
             this.pnl_EliminarE.Controls.Add(this.lbl_Elim);
             this.pnl_EliminarE.Controls.Add(this.txt_Buscar);
-            this.pnl_EliminarE.Location = new System.Drawing.Point(12, 54);
+            this.pnl_EliminarE.Location = new System.Drawing.Point(12, 47);
             this.pnl_EliminarE.Name = "pnl_EliminarE";
             this.pnl_EliminarE.Size = new System.Drawing.Size(426, 359);
             this.pnl_EliminarE.TabIndex = 9;

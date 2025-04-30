@@ -156,6 +156,7 @@
             this.btn_Confirmar.TabIndex = 4;
             this.btn_Confirmar.Text = "Reistrar Empleado";
             this.btn_Confirmar.UseVisualStyleBackColor = false;
+            this.btn_Confirmar.Click += new System.EventHandler(this.btn_Confirmar_Click);
             // 
             // txt_Duracion
             // 
@@ -176,7 +177,7 @@
             // txt_DescServ
             // 
             this.txt_DescServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DescServ.Location = new System.Drawing.Point(239, 150);
+            this.txt_DescServ.Location = new System.Drawing.Point(239, 153);
             this.txt_DescServ.Multiline = true;
             this.txt_DescServ.Name = "txt_DescServ";
             this.txt_DescServ.Size = new System.Drawing.Size(331, 143);
@@ -186,7 +187,7 @@
             // 
             this.lbl_Descripcion.AutoSize = true;
             this.lbl_Descripcion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Descripcion.Location = new System.Drawing.Point(45, 153);
+            this.lbl_Descripcion.Location = new System.Drawing.Point(54, 156);
             this.lbl_Descripcion.Name = "lbl_Descripcion";
             this.lbl_Descripcion.Size = new System.Drawing.Size(91, 21);
             this.lbl_Descripcion.TabIndex = 11;
@@ -226,7 +227,7 @@
             // 
             this.lbl_NomServ.AutoSize = true;
             this.lbl_NomServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NomServ.Location = new System.Drawing.Point(45, 118);
+            this.lbl_NomServ.Location = new System.Drawing.Point(54, 121);
             this.lbl_NomServ.Name = "lbl_NomServ";
             this.lbl_NomServ.Size = new System.Drawing.Size(68, 21);
             this.lbl_NomServ.TabIndex = 7;
