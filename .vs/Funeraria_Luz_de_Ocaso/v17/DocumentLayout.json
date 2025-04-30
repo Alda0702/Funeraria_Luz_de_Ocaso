@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|c:\\users\\usuario\\desktop\\nueva carpeta\\funeraria_luz_de_ocaso\\funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|c:\\users\\usuario\\desktop\\nueva carpeta\\funeraria_luz_de_ocaso\\funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|c:\\users\\usuario\\desktop\\nueva carpeta\\funeraria_luz_de_ocaso\\funeraria_descanso_eterno\\frm_eliminarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_eliminarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\funeraria_descanso_eterno\\frm_eliminarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_eliminarempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\funeraria_descanso_eterno\\frm_empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +46,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "frm_NuevoProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:41:34.647Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_Inventario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_Inventario.cs",
+              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Inventario.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_Inventario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Inventario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:41:33.794Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frm_EliminarEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
               "ToolTip": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
               "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T18:06:27.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "frm_Empleados.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_Empleados.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Empleados.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frm_Empleados.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_Empleados.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Empleados.cs",
@@ -78,19 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ClsDB.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\ClsDB.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\ClsDB.cs",
               "ToolTip": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\ClsDB.cs",
               "RelativeToolTip": "Funeraria_Descanso_Eterno\\ClsDB.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAD4v0UBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:48:37.962Z"
+              "WhenOpened": "2025-04-30T17:48:37.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ClsEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\ClsEmpleado.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\ClsEmpleado.cs",
@@ -102,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "frm_EliminarEmpleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_EliminarEmpleado.cs",
@@ -113,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frm_NuevoEmpleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Nueva carpeta\\Funeraria_Luz_de_Ocaso\\Funeraria_Descanso_Eterno\\frm_NuevoEmpleado.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_NuevoEmpleado.cs",
