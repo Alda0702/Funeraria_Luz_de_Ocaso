@@ -71,6 +71,24 @@ namespace Funeraria_Descanso_Eterno
                 MessageBox.Show("Error al insertar el cliente: " + ex.Message);
             }
         }
+
+        public void cliente()
+        {
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
+
+                cmd_sqlite.CommandText = "ALTER TABLE Cliente ADD COLUMN Cedula TEXT";
+                cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar el cliente: " + ex.Message);
+            }
+
+           
+        }
     }
 
 }
