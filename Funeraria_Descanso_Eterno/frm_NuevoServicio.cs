@@ -52,7 +52,7 @@ namespace Funeraria_Descanso_Eterno
 
             MessageBox.Show("Servicio Agregado");
             servicios ADD = new servicios();
-            ADD.InsertarCliente(nombre,descripcion,categoria,duracion,precio);
+            ADD.InsertarServicios(nombre,descripcion,categoria,duracion,precio);
         }
     }
 }

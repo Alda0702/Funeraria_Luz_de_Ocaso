@@ -64,7 +64,8 @@ namespace Funeraria_Descanso_Eterno
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            servicios ADD = new servicios();
+            ADD.altertable();
         }
     }
 }
