@@ -35,8 +35,6 @@
             this.pnl_NuevoCl = new System.Windows.Forms.Panel();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Confirmar = new System.Windows.Forms.Button();
-            this.txt_CodigoServ = new System.Windows.Forms.TextBox();
-            this.lbl_Cod = new System.Windows.Forms.Label();
             this.txt_Duracion = new System.Windows.Forms.TextBox();
             this.txt_CategoriaServ = new System.Windows.Forms.TextBox();
             this.txt_DescServ = new System.Windows.Forms.TextBox();
@@ -114,8 +112,6 @@
             this.pnl_NuevoCl.Controls.Add(this.tx_PrecioServ);
             this.pnl_NuevoCl.Controls.Add(this.btn_Cancelar);
             this.pnl_NuevoCl.Controls.Add(this.btn_Confirmar);
-            this.pnl_NuevoCl.Controls.Add(this.txt_CodigoServ);
-            this.pnl_NuevoCl.Controls.Add(this.lbl_Cod);
             this.pnl_NuevoCl.Controls.Add(this.txt_Duracion);
             this.pnl_NuevoCl.Controls.Add(this.txt_CategoriaServ);
             this.pnl_NuevoCl.Controls.Add(this.txt_DescServ);
@@ -161,24 +157,6 @@
             this.btn_Confirmar.Text = "Reistrar Empleado";
             this.btn_Confirmar.UseVisualStyleBackColor = false;
             // 
-            // txt_CodigoServ
-            // 
-            this.txt_CodigoServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CodigoServ.Location = new System.Drawing.Point(239, 106);
-            this.txt_CodigoServ.Name = "txt_CodigoServ";
-            this.txt_CodigoServ.Size = new System.Drawing.Size(331, 29);
-            this.txt_CodigoServ.TabIndex = 21;
-            // 
-            // lbl_Cod
-            // 
-            this.lbl_Cod.AutoSize = true;
-            this.lbl_Cod.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Cod.Location = new System.Drawing.Point(45, 106);
-            this.lbl_Cod.Name = "lbl_Cod";
-            this.lbl_Cod.Size = new System.Drawing.Size(60, 21);
-            this.lbl_Cod.TabIndex = 19;
-            this.lbl_Cod.Text = "Código";
-            // 
             // txt_Duracion
             // 
             this.txt_Duracion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,7 +176,7 @@
             // txt_DescServ
             // 
             this.txt_DescServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DescServ.Location = new System.Drawing.Point(239, 173);
+            this.txt_DescServ.Location = new System.Drawing.Point(239, 150);
             this.txt_DescServ.Multiline = true;
             this.txt_DescServ.Name = "txt_DescServ";
             this.txt_DescServ.Size = new System.Drawing.Size(331, 143);
@@ -208,7 +186,7 @@
             // 
             this.lbl_Descripcion.AutoSize = true;
             this.lbl_Descripcion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Descripcion.Location = new System.Drawing.Point(45, 176);
+            this.lbl_Descripcion.Location = new System.Drawing.Point(45, 153);
             this.lbl_Descripcion.Name = "lbl_Descripcion";
             this.lbl_Descripcion.Size = new System.Drawing.Size(91, 21);
             this.lbl_Descripcion.TabIndex = 11;
@@ -248,7 +226,7 @@
             // 
             this.lbl_NomServ.AutoSize = true;
             this.lbl_NomServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NomServ.Location = new System.Drawing.Point(45, 141);
+            this.lbl_NomServ.Location = new System.Drawing.Point(45, 118);
             this.lbl_NomServ.Name = "lbl_NomServ";
             this.lbl_NomServ.Size = new System.Drawing.Size(68, 21);
             this.lbl_NomServ.TabIndex = 7;
@@ -257,7 +235,7 @@
             // txt_NomServ
             // 
             this.txt_NomServ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NomServ.Location = new System.Drawing.Point(239, 141);
+            this.txt_NomServ.Location = new System.Drawing.Point(239, 118);
             this.txt_NomServ.Name = "txt_NomServ";
             this.txt_NomServ.Size = new System.Drawing.Size(331, 29);
             this.txt_NomServ.TabIndex = 6;
@@ -341,8 +319,6 @@
         private System.Windows.Forms.Panel pnl_NuevoCl;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Confirmar;
-        private System.Windows.Forms.TextBox txt_CodigoServ;
-        private System.Windows.Forms.Label lbl_Cod;
         private System.Windows.Forms.TextBox txt_Duracion;
         private System.Windows.Forms.TextBox txt_CategoriaServ;
         private System.Windows.Forms.TextBox txt_DescServ;

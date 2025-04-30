@@ -5,21 +5,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Finisar.SQLite;
+using System;
+using System.Data.SQLite;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Funeraria_Descanso_Eterno
 {
-    //espacio para clases de la db
-    public class ConexionSQLite  //obtiene la conexion una vez y la devuelve en caso de ya estar creada
+    public class ConexionSQLite
     {
         private static ConexionSQLite instancia;
         private SQLiteConnection conexion;
 
         private ConexionSQLite()
         {
-            string cadenaConexion = "Data Source=DBFunebre.db;Version=3;Compress=True;";
-            conexion = new SQLiteConnection(cadenaConexion);
-            conexion.Open();
-            MessageBox.Show("Conectado a la base de datos");
+            try
+            {
+                string cadenaConexion = "Data Source=DBFunebre.db;Version=3;Compress=True;";
+                conexion = new SQLiteConnection(cadenaConexion);
+                conexion.Open();
+                // MessageBox.Show("Conectado a la base de datos");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+            }
         }
 
         public static ConexionSQLite Instancia
@@ -27,38 +37,38 @@ namespace Funeraria_Descanso_Eterno
             get
             {
                 if (instancia == null)
+                {
                     instancia = new ConexionSQLite();
+                }
 
-                MessageBox.Show("Ya existe una instancia de la base de datos");
                 return instancia;
             }
         }
 
         public SQLiteConnection ObtenerConexion()
         {
-            MessageBox.Show("Conectando a la base de datos return");
             return conexion;
         }
-
-
-
-
     }
 
-
-    public class AddTables
+    public class servicios
     {
-        public void CreateTable()
+        SQLiteConnection conexion_sqlite;
+        SQLiteCommand cmd_sqlite;
+
+        public void InsertarCliente(string Nombre, string Descripcion, string Categoria, int DuracioEst, int Precio)
         {
-                try
-                {
-                    //creacion de tablas termanda hasta el momento
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+
+            conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+            //open?
+
+            cmd_sqlite = conexion_sqlite.CreateCommand();
+            cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, ) VALUES ('{Nombre}','{Descripcion}', '{Categoria}')";
+            cmd_sqlite.ExecuteNonQuery();
+
 
         }
     }
+
 }
+
