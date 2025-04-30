@@ -108,3 +108,5 @@ C:\Users\tener\OneDrive\Escritorio\Novo\Funeraria_Luz_de_Ocaso\Funeraria_Descans
 C:\Users\tener\OneDrive\Escritorio\Novo\Funeraria_Luz_de_Ocaso\Funeraria_Descanso_Eterno\bin\Debug\Funeraria_Descanso_Eterno.exe
 C:\Users\tener\OneDrive\Escritorio\Novo\Funeraria_Luz_de_Ocaso\Funeraria_Descanso_Eterno\bin\Debug\Funeraria_Descanso_Eterno.pdb
 C:\Users\tener\OneDrive\Escritorio\Novo\Funeraria_Luz_de_Ocaso\Funeraria_Descanso_Eterno\obj\Debug\Funerari.16C97947.Up2Date
+D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoUsario.resources
+D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funerari.16C97947.Up2Date
