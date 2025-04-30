@@ -160,6 +160,52 @@ namespace Funeraria_Descanso_Eterno
 
             return idEmpleado;
         }
+        public void Mostrarempleado(DataGridView dgv)
+        {
+            SQLiteDataReader reader = null;
+            try
+            {
+                dgv.Rows.Clear(); // Limpiar filas anteriores si es necesario
+
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
+                cmd_sqlite.CommandText = "SELECT * FROM Empleado";
+
+                reader = cmd_sqlite.ExecuteReader();
+                while (reader.Read())
+                {
+                    dgv.Rows.Add(
+                        reader["ID_Empleado"].ToString(),
+                        reader["REF_Rol"].ToString(),
+                        reader["Nombre_E"].ToString(),
+                        reader["ApellidoP_E"].ToString(),
+                        reader["ApellidoM_E"].ToString(),
+                        reader["Cedula_E"].ToString(),
+                        reader["Sexo_E"].ToString(),
+                        reader["F_Nacimiento_E"].ToString(),
+                        reader["Depto_E"].ToString(),
+                        reader["Ciudad_E"].ToString(),
+                        reader["Direccion_E"].ToString(),
+                        reader["Mail_E"].ToString(),
+                        reader["Celular_E"].ToString(),
+                        reader["Tdoc_E"].ToString()
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al mostrar los empleados: " + ex.Message);
+            }
+            finally
+            {
+                if (reader != null && !reader.IsClosed)
+                    reader.Close();
+
+                if (cmd_sqlite != null)
+                    cmd_sqlite.Dispose();
+            }
+        }
+
 
     }
 
@@ -197,6 +243,8 @@ namespace Funeraria_Descanso_Eterno
 
 
     }
+
+
         public void InsertarUsuario(ClsUser usr, int idEmpleado)
         {
             try

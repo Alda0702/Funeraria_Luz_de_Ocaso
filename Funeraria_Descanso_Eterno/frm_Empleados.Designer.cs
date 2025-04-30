@@ -62,7 +62,7 @@
             // 
             this.txt_BuscarE.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_BuscarE.Location = new System.Drawing.Point(176, 36);
-            this.txt_BuscarE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_BuscarE.Margin = new System.Windows.Forms.Padding(4);
             this.txt_BuscarE.Name = "txt_BuscarE";
             this.txt_BuscarE.Size = new System.Drawing.Size(1183, 39);
             this.txt_BuscarE.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.pnl_BuscarE.Controls.Add(this.lbl_BuscarE);
             this.pnl_BuscarE.Controls.Add(this.txt_BuscarE);
             this.pnl_BuscarE.Location = new System.Drawing.Point(35, 15);
-            this.pnl_BuscarE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_BuscarE.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_BuscarE.Name = "pnl_BuscarE";
             this.pnl_BuscarE.Size = new System.Drawing.Size(1395, 114);
             this.pnl_BuscarE.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.btn_EliminarE.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_EliminarE.ForeColor = System.Drawing.Color.White;
             this.btn_EliminarE.Location = new System.Drawing.Point(792, 149);
-            this.btn_EliminarE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_EliminarE.Margin = new System.Windows.Forms.Padding(4);
             this.btn_EliminarE.Name = "btn_EliminarE";
             this.btn_EliminarE.Size = new System.Drawing.Size(339, 52);
             this.btn_EliminarE.TabIndex = 7;
@@ -104,7 +104,7 @@
             this.btn_ActualizarE.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ActualizarE.ForeColor = System.Drawing.Color.White;
             this.btn_ActualizarE.Location = new System.Drawing.Point(563, 149);
-            this.btn_ActualizarE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ActualizarE.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ActualizarE.Name = "btn_ActualizarE";
             this.btn_ActualizarE.Size = new System.Drawing.Size(221, 52);
             this.btn_ActualizarE.TabIndex = 6;
@@ -119,7 +119,7 @@
             this.btn_NuevoE.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NuevoE.ForeColor = System.Drawing.Color.White;
             this.btn_NuevoE.Location = new System.Drawing.Point(336, 149);
-            this.btn_NuevoE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_NuevoE.Margin = new System.Windows.Forms.Padding(4);
             this.btn_NuevoE.Name = "btn_NuevoE";
             this.btn_NuevoE.Size = new System.Drawing.Size(219, 52);
             this.btn_NuevoE.TabIndex = 5;
@@ -161,7 +161,7 @@
             this.dtg_Empleados.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_Empleados.EnableHeadersVisualStyles = false;
             this.dtg_Empleados.Location = new System.Drawing.Point(16, 222);
-            this.dtg_Empleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtg_Empleados.Margin = new System.Windows.Forms.Padding(4);
             this.dtg_Empleados.Name = "dtg_Empleados";
             this.dtg_Empleados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -231,9 +231,10 @@
             this.Controls.Add(this.btn_NuevoE);
             this.Controls.Add(this.pnl_BuscarE);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Empleados";
             this.Text = "frm_Empleados";
+            this.Load += new System.EventHandler(this.frm_Empleados_Load);
             this.pnl_BuscarE.ResumeLayout(false);
             this.pnl_BuscarE.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Empleados)).EndInit();

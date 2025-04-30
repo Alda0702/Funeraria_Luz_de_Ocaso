@@ -12,6 +12,8 @@ namespace Funeraria_Descanso_Eterno
 {
     public partial class frm_Empleados : Form
     {
+        EmpleadoDB empleadoDB = new EmpleadoDB();
+
         public frm_Empleados()
         {
             InitializeComponent();
@@ -38,6 +40,12 @@ namespace Funeraria_Descanso_Eterno
         // Hola mundo
         private void dtg_Empleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void frm_Empleados_Load(object sender, EventArgs e)
+        {
+            empleadoDB.Mostrarempleado(dtg_Empleados);
 
         }
     }
