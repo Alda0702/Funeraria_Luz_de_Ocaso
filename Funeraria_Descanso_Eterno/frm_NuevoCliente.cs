@@ -41,5 +41,12 @@ namespace Funeraria_Descanso_Eterno
         {
             this.Close();
         }
+
+        private void btn_Confirmar_Click(object sender, EventArgs e)
+        {
+            string tipoc = cmb_Tdoc.Text;
+            string doc = txt_Tdoc.Text;
+            string nombre = txt_NomC.Text;
+        }
     }
 }

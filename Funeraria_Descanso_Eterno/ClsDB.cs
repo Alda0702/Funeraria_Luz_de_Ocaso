@@ -55,7 +55,7 @@ namespace Funeraria_Descanso_Eterno
         SQLiteConnection conexion_sqlite;
         SQLiteCommand cmd_sqlite;
 
-        public void InsertarCliente(string Nombre, string Descripcion, string Categoria, int DuracioEst, int Precio)
+        public void InsertarServicios(string Nombre, string Descripcion, string Categoria, int DuracioEst, int Precio)
         {
 
             try
@@ -72,23 +72,51 @@ namespace Funeraria_Descanso_Eterno
             }
         }
 
-        public void cliente()
-        {
+       public void mostrardata(DataGridView dgv)
+       {
+            SQLiteDataReader datareader_sqlite;
             try
             {
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
 
-                cmd_sqlite.CommandText = "ALTER TABLE Cliente ADD COLUMN Cedula TEXT";
+                cmd_sqlite.CommandText = $"Select * FROM Servicio";
                 cmd_sqlite.ExecuteNonQuery();
+                datareader_sqlite = cmd_sqlite.ExecuteReader();
+
+                while (datareader_sqlite.Read())
+                {
+                    dgv.Rows.Add(datareader_sqlite["Codigo_Servicio"].ToString(), datareader_sqlite["Nombre_P"].ToString(), datareader_sqlite["Descripcion_P"].ToString(), datareader_sqlite["Categoria_P"].ToString(), datareader_sqlite["Duracion_estimadaHrs_P"].ToString(), datareader_sqlite["Precio_P"].ToString());
+                }
+
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al insertar el cliente: " + ex.Message);
+                MessageBox.Show("Error al mostrar los datos: " + ex.Message);
             }
 
-           
         }
+
+
+        public void altertable()
+        {
+            //try
+            //{
+            //    conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+            //    cmd_sqlite = conexion_sqlite.CreateCommand();
+
+            //    //cmd_sqlite.CommandText = $"ALTER TABLE Cliente ADD COLUMN Cedula_C TEXT;";
+
+            //    cmd_sqlite.ExecuteNonQuery();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error al alterar la tabla: " + ex.Message);
+            //}
+        }
+           
+        
     }
 
 }
