@@ -63,7 +63,7 @@ namespace Funeraria_Descanso_Eterno
             //open?
 
             cmd_sqlite = conexion_sqlite.CreateCommand();
-            cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, ) VALUES ('{name}','{user}', '{password}')";
+            cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, ) VALUES ('{Nombre}','{Descripcion}', '{Categoria}')";
             cmd_sqlite.ExecuteNonQuery();
 
 
