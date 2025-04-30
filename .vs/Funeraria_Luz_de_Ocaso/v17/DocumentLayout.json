@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_eliminarproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\funeraria_descanso_eterno\\frm_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,8 +50,7 @@
               "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Proveedores.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAewCEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T23:17:56.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T23:17:56.953Z"
             },
             {
               "$type": "Document",
@@ -62,8 +61,7 @@
               "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Proveedores.cs [Dise\u00F1o]",
               "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Proveedores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T22:54:25.906Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-29T22:54:25.906Z"
             }
           ]
         }
