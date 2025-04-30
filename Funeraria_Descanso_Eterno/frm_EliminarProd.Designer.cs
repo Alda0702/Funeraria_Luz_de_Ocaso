@@ -135,6 +135,7 @@
             this.btn_Eliminar.TabIndex = 35;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // lbl_ImprimirNom
             // 
@@ -206,6 +207,7 @@
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(254, 33);
             this.txt_Buscar.TabIndex = 4;
+            this.txt_Buscar.TextChanged += new System.EventHandler(this.txt_Buscar_TextChanged);
             // 
             // pnl_Titulo
             // 
