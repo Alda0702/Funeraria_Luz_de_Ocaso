@@ -32,5 +32,10 @@ namespace Funeraria_Descanso_Eterno
             frm_EliminarProd.ShowDialog();
             this.Show();
         }
+
+        private void dtg_Inventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
