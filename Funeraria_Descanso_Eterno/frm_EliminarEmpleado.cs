@@ -37,5 +37,54 @@ namespace Funeraria_Descanso_Eterno
         {
 
         }
+
+        private void pnl_EliminarE_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_Buscar_TextChanged(object sender, EventArgs e)
+        {
+            EmpleadoDB EMPL = new EmpleadoDB();
+            string codigo, nombre;
+
+
+            if (EMPL.BuscarProducto(txt_Buscar.Text.Trim(), out codigo, out nombre))
+            {
+                lbl_ImprimirDoc.Text = codigo;
+                lbl_ImprimirNom.Text = nombre;
+            }
+            else
+            {
+                lbl_ImprimirDoc.Text = "";
+                lbl_ImprimirNom.Text = "";
+            }
+        }
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (lbl_ImprimirDoc.Text != "")
+            {
+                DialogResult confirm = MessageBox.Show("¿Estás seguro de eliminar este producto?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (confirm == DialogResult.Yes)
+                {
+                    EmpleadoDB Emp = new EmpleadoDB();
+                    bool eliminado = Emp.EliminarEmplPorCodigo(lbl_ImprimirNom.Text);
+
+                    if (eliminado)
+                    {
+                        MessageBox.Show("Producto eliminado correctamente.");
+                        txt_Buscar.Text = "";
+                        lbl_ImprimirDoc.Text = "";
+                        lbl_ImprimirNom.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar el producto.");
+                    }
+                }
+
+            }
+        }
     }
 }

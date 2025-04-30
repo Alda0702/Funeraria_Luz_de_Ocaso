@@ -66,6 +66,7 @@
             this.txt_BuscarE.Name = "txt_BuscarE";
             this.txt_BuscarE.Size = new System.Drawing.Size(1183, 39);
             this.txt_BuscarE.TabIndex = 0;
+            this.txt_BuscarE.TextChanged += new System.EventHandler(this.txt_BuscarE_TextChanged);
             // 
             // pnl_BuscarE
             // 

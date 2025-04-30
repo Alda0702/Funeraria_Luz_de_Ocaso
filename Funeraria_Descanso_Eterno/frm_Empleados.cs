@@ -48,5 +48,11 @@ namespace Funeraria_Descanso_Eterno
             empleadoDB.Mostrarempleado(dtg_Empleados);
 
         }
+
+        private void txt_BuscarE_TextChanged(object sender, EventArgs e)
+        {
+            empleadoDB.BuscarPorCodigoempl(dtg_Empleados, txt_BuscarE.Text.Trim());
+
+        }
     }
 }
