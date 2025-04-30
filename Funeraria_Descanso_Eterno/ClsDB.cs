@@ -131,8 +131,13 @@ namespace Funeraria_Descanso_Eterno
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
 
-                cmd_sqlite.CommandText = $"INSERT INTO Cliente (tipoC_C, Cedula, Nombre_C, ApellidoP_C, ApellidoM_C, Cedula_C, Genero_C, F_Nacimiento_C,Depto_C,Ciudad_C,Direccion_C,Mail_C,Celular_C)VALUES  ({tipoc}', '{doc}', '{nombre}', '{apellidoP}', '{apellidoM}', '{nacimiento}', '{sexo}', '{pais}', '{depto}', '{ciudad}', '{direccion}', '{telefono}', '{email})";
+                cmd_sqlite.CommandText = $"INSERT INTO Cliente (tipoC_C, Cedula, Nombre_C, ApellidoP_C, ApellidoM_C, Genero_C, F_Nacimiento_C, Pais_C, Depto_C,Ciudad_C,Direccion_C,Mail_C,Celular_C)VALUES  ('{tipoc}', '{doc}', '{nombre}', '{apellidoP}', '{apellidoM}', '{sexo} ', '{nacimiento}', '{pais}', '{depto}', '{ciudad}', '{direccion}', '{email} ', '{telefono}')";
                 cmd_sqlite.ExecuteNonQuery();
+
+
+                MessageBox.Show("Añadido");
+
+              
             }
             catch (Exception ex)
             {

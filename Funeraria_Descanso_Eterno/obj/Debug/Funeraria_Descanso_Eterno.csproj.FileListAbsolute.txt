@@ -52,3 +52,5 @@ C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria
 C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funerari.16C97947.Up2Date
 C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.exe
 C:\Users\Juan\Desktop\hrramintas 2\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.pdb
+D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funeraria_Descanso_Eterno.frm_NuevoUsario.resources
+D:\DATOS\Desktop\Funeraria_Descanso_Eterno\Funeraria_Descanso_Eterno\obj\Debug\Funerari.16C97947.Up2Date
