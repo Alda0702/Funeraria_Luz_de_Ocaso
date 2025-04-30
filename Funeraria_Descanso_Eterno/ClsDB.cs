@@ -8,6 +8,7 @@ using Finisar.SQLite;
 using System;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Data.SqlClient;
 
 namespace Funeraria_Descanso_Eterno
 {
@@ -91,6 +92,50 @@ namespace Funeraria_Descanso_Eterno
             catch (Exception ex)
             {
                 MessageBox.Show("Error al insertar el Producto: " + ex.Message);
+            }
+        }
+        public void MostrarInventario(DataGridView dgv)
+        {
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
+                cmd_sqlite.CommandText = "SELECT * FROM Inventario";
+                cmd_sqlite.ExecuteNonQuery();
+                SQLiteDataReader datareader_sqlite = cmd_sqlite.ExecuteReader();
+
+                while (datareader_sqlite.Read()) 
+                {
+                    dgv.Rows.Add(datareader_sqlite["codigo_Prod"].ToString(), datareader_sqlite["Nombre_P"].ToString(), datareader_sqlite["Descripcion_P"].ToString(), datareader_sqlite["Categoria_P"].ToString(), datareader_sqlite["Stock_P"].ToString(), datareader_sqlite["Precio_P"].ToString());
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al mostrar el Inventario: " + ex.Message);
+            }
+        }
+        public void BuscarPorCodigo(DataGridView dgv, string codigo)
+        {
+            try
+            {
+                dgv.Rows.Clear(); // Limpia el grid antes de mostrar resultados nuevos
+
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
+                cmd_sqlite.CommandText = $"SELECT * FROM Inventario WHERE codigo_Prod LIKE '%{codigo}%'";
+
+                SQLiteDataReader datareader_sqlite = cmd_sqlite.ExecuteReader();
+
+                while (datareader_sqlite.Read())
+                {
+                    dgv.Rows.Add(datareader_sqlite["Codigo_Prod"].ToString(),datareader_sqlite["Nombre_P"].ToString(),datareader_sqlite["Descripcion_P"].ToString(),datareader_sqlite["Categoria_P"].ToString(),datareader_sqlite["Stock_P"].ToString(),datareader_sqlite["Precio_P"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar el producto: " + ex.Message);
             }
         }
 
