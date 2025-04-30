@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_nuevoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\clsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_eliminarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_eliminarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_eliminarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_eliminarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|d:\\datos\\desktop\\funeraria_descanso_eterno\\funeraria_descanso_eterno\\frm_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AEB89F9-2CF5-4395-9618-FFE7389C208A}|Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno.csproj|solutionrelative:funeraria_descanso_eterno\\frm_servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +34,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_EliminarProd.cs",
-              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAwwFMAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "frm_NuevoProducto.cs",
+              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAkwE4AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:41:15.559Z",
+              "WhenOpened": "2025-04-30T14:14:05.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_EliminarProd.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_EliminarProd.cs",
-              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_EliminarProd.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_EliminarProd.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "frm_NuevoProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs",
+              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_NuevoProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:34:30.334Z",
+              "WhenOpened": "2025-04-30T14:13:58.856Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "frm_Servicios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Servicios.cs",
+              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Servicios.cs",
+              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Servicios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Servicios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T14:12:37.921Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClsDB.cs",
               "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\ClsDB.cs",
               "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\ClsDB.cs",
               "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\ClsDB.cs",
               "RelativeToolTip": "Funeraria_Descanso_Eterno\\ClsDB.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowPgAAAAJAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAwwEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T05:20:39.878Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frm_Inventario.cs",
-              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAywDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:17:33.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frm_Inventario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "RelativeDocumentMoniker": "Funeraria_Descanso_Eterno\\frm_Inventario.cs",
-              "ToolTip": "D:\\DATOS\\Desktop\\Funeraria_Descanso_Eterno\\Funeraria_Descanso_Eterno\\frm_Inventario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Funeraria_Descanso_Eterno\\frm_Inventario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:17:19.178Z"
             }
           ]
         }

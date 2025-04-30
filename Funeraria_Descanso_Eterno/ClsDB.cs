@@ -16,11 +16,14 @@ namespace Funeraria_Descanso_Eterno
     {
         private static ConexionSQLite instancia;
         private SQLiteConnection conexion;
+
+        // Bandera que indica si la conexión está abierta
         private bool conexionAbierta = false;
 
-
+        // Constructor privado para que nadie pueda crear instancias directamente
         private ConexionSQLite() { }
 
+        // Propiedad pública para obtener la instancia única de la clase
         public static ConexionSQLite Instancia
         {
             get
@@ -31,47 +34,31 @@ namespace Funeraria_Descanso_Eterno
             }
         }
 
+        // Método para obtener una conexión abierta a la base de datos
         public SQLiteConnection ObtenerConexion()
         {
             if (conexion == null || conexion.State != ConnectionState.Open)
             {
+                // Cadena de conexión a la base de datos SQLite
                 string cadenaConexion = "Data Source=DBFunebre.db;Version=3;Compress=True;";
+
+                // Crear nueva conexión
                 conexion = new SQLiteConnection(cadenaConexion);
-                conexion.Open();
+                conexion.Open(); // Abrir la conexión
+
+                // Marcar que la conexión está abierta
                 conexionAbierta = true;
             }
-            return conexion;
+            return conexion;  // Devolver la conexión abierta
         }
+
+        // Método para cerrar la conexión abierta
         public void CerrarConexion()
         {
             if (conexionAbierta && conexion != null)
             {
-                conexion.Close();
-                conexionAbierta = false;
-            }
-        }
-    }
-
-    public class servicios
-    {
-        SQLiteConnection conexion_sqlite;
-        SQLiteCommand cmd_sqlite;
-
-        public void InsertarCliente(string Nombre, string Descripcion, string Categoria, int DuracioEst, int Precio)
-        {
-
-            try
-            {
-                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
-                cmd_sqlite = conexion_sqlite.CreateCommand();
-
-
-                cmd_sqlite.CommandText = $"INSERT INTO Servicio (Nombre_P, Descripcion_P, Categoria_P, Duracion_estimadaHrs_P, Precio_P)VALUES  ('{Nombre}','{Descripcion}', '{Categoria} ', ' {DuracioEst}' ,  {Precio})";
-                cmd_sqlite.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al insertar el cliente: " + ex.Message);
+                conexion.Close(); // Cierra la conexión
+                conexionAbierta = false; // Marca que ya no está abierta
             }
         }
     }
@@ -97,14 +84,20 @@ namespace Funeraria_Descanso_Eterno
         }
         public void MostrarInventario(DataGridView dgv)
         {
+            // Declarar el lector de datos para recorrer los resultados de la base de datos
             SQLiteDataReader reader = null;
             try
             {
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
+
+                    // Establecer la instrucción SQL para obtener todos los registros de la tabla Inventario
                 cmd_sqlite.CommandText = "SELECT * FROM Inventario";
 
+                // Ejecutar la consulta y obtener un lector con los resultados
                 reader = cmd_sqlite.ExecuteReader();
+
+                // Leer fila por fila y agregar cada producto al DataGridView
                 while (reader.Read())
                 {
                     dgv.Rows.Add(reader["Codigo_Prod"].ToString(),
@@ -121,25 +114,38 @@ namespace Funeraria_Descanso_Eterno
             }
             finally
             {
+
+                // Cerrar el lector si está abierto
                 if (reader != null && !reader.IsClosed)
                     reader.Close();
 
+                // Liberar el recurso del comando
                 if (cmd_sqlite != null)
                     cmd_sqlite.Dispose();
 
+                // Cerrar la conexión a la base de datos
                 ConexionSQLite.Instancia.CerrarConexion();
             }
         }
         public void BuscarPorCodigo(DataGridView dgv, string codigo)
         {
+            // Declarar el lector para recorrer los resultados de la consulta
             SQLiteDataReader reader = null;
+
+
             try
             {
+                // Limpiar las filas existentes del DataGridView antes de mostrar los nuevos resultados 
                 dgv.Rows.Clear();
+
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
+
+                // Establecer y ejecutar la consulta para buscar productos cuyo Código contenga el texto ingresado
                 cmd_sqlite.CommandText = $"SELECT * FROM Inventario WHERE Codigo_Prod LIKE '%{codigo}%'";
                 reader = cmd_sqlite.ExecuteReader();
+
+                // Leer todos los registros encontrados y agregarlos al DataGridView
                 while (reader.Read())
                 {
                     dgv.Rows.Add(reader["Codigo_Prod"].ToString(),
@@ -156,18 +162,24 @@ namespace Funeraria_Descanso_Eterno
             }
             finally
             {
+                // Cerrar el lector si está abierto
                 if (reader != null && !reader.IsClosed)
                     reader.Close();
 
+                // Liberar el recurso del comando
                 if (cmd_sqlite != null)
                     cmd_sqlite.Dispose();
 
+                // Cerrar la conexión a la base de datos
                 ConexionSQLite.Instancia.CerrarConexion();
             }
         }
         public bool BuscarProducto(string textoBusqueda, out string codigo, out string nombre)
         {
+            // Declarar el lector de datos
             SQLiteDataReader reader = null;
+
+            // Inicializar los valores de salida
             codigo = "";
             nombre = "";
 
@@ -175,13 +187,20 @@ namespace Funeraria_Descanso_Eterno
             {
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
+
+                // Establecer la consulta SQL para buscar productos cuyo código o nombre coincida parcialmente
                 cmd_sqlite.CommandText = $"SELECT * FROM Inventario WHERE Codigo_Prod LIKE '%{textoBusqueda}%' OR Nombre_P LIKE '%{textoBusqueda}%'";
+                // Ejecutar la consulta y obtener el lector de resultados
                 reader = cmd_sqlite.ExecuteReader();
 
+                // Si se encuentra al menos un registro...
                 if (reader.Read())
                 {
+                    // Asignar los valores encontrados a las variables de salida
                     codigo = reader["Codigo_Prod"].ToString();
                     nombre = reader["Nombre_P"].ToString();
+
+                    // Retornar true indicando que se encontró un producto
                     return true;
                 }
             }
@@ -191,15 +210,19 @@ namespace Funeraria_Descanso_Eterno
             }
             finally
             {
+                // Cerrar el lector si está abierto
                 if (reader != null && !reader.IsClosed)
                     reader.Close();
 
+                // Liberar recursos del comando
                 if (cmd_sqlite != null)
                     cmd_sqlite.Dispose();
 
+                // Cerrar la conexión a la base de datos
                 ConexionSQLite.Instancia.CerrarConexion();
             }
 
+            // Si no se encontró ningún producto, devolver false
             return false;
         }
         public bool EliminarProductoPorCodigo(string codigo)
@@ -209,20 +232,25 @@ namespace Funeraria_Descanso_Eterno
                 conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
                 cmd_sqlite = conexion_sqlite.CreateCommand();
 
-                // Verificar si existe
+                // Verificar si el producto existe en la base de datos con ese código
                 cmd_sqlite.CommandText = $"SELECT COUNT(*) FROM Inventario WHERE Codigo_Prod = '{codigo}'";
+
+                // Ejecutar la consulta y obtener la cantidad de coincidencias
                 long count = Convert.ToInt64(cmd_sqlite.ExecuteScalar());
 
+                // Si no existe ningún producto con ese código, mostrar un mensaje y salir
                 if (count == 0)
                 {
                     MessageBox.Show("El producto con el código " + codigo + " no existe en la base de datos.");
                     return false;
                 }
 
-                // Eliminar
+                // Si existe, proceder a eliminarlo
                 cmd_sqlite.CommandText = $"DELETE FROM Inventario WHERE Codigo_Prod = '{codigo}'";
+                // Ejecutar el comando DELETE
                 int filasAfectadas = cmd_sqlite.ExecuteNonQuery();
 
+                // Verificar si realmente se eliminó (si se afectó al menos una fila)
                 if (filasAfectadas > 0)
                 {
                     MessageBox.Show("Producto eliminado correctamente.");
@@ -230,6 +258,7 @@ namespace Funeraria_Descanso_Eterno
                 }
                 else
                 {
+                    // Por si algo salió mal y no se eliminó nada
                     MessageBox.Show("No se pudo eliminar el producto.");
                     return false;
                 }
@@ -240,11 +269,14 @@ namespace Funeraria_Descanso_Eterno
                 return false;
             }
             finally
-            {
+            { 
+            // Liberar recursos aunque haya éxito o error
+            // Liberar el comando
                 if (cmd_sqlite != null)
                     cmd_sqlite.Dispose();
 
-                ConexionSQLite.Instancia.CerrarConexion();
+            // Cerrar la conexión a la base de datos
+            ConexionSQLite.Instancia.CerrarConexion();
             }
         }
     }
