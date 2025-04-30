@@ -72,8 +72,8 @@ namespace Funeraria_Descanso_Eterno
             }
         }
 
-       public void mostrardata(DataGridView dgv)
-       {
+        public void mostrardata(DataGridView dgv)
+        {
             SQLiteDataReader datareader_sqlite;
             try
             {
@@ -101,23 +101,48 @@ namespace Funeraria_Descanso_Eterno
 
         public void altertable()
         {
-            //try
-            //{
-            //    conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
-            //    cmd_sqlite = conexion_sqlite.CreateCommand();
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
 
-            //    //cmd_sqlite.CommandText = $"ALTER TABLE Cliente ADD COLUMN Cedula_C TEXT;";
+                //cmd_sqlite.CommandText = $"CREATE TABLE Cliente ( ID_Cliente integer, tipoC_C text not null, Cedula text unique not null,  Nombre_C text NOT NULL, ApellidoP_C text NOT NULL, ApellidoM_C text NOT NULL, Cedula_C text UNIQUE, Genero_C text, F_Nacimiento_C text, Pais_C text, Depto_C text, Ciudad_C text, Direccion_C text, Mail_C text NOT NULL, Celular_C text NOT NULL, PRIMARY KEY(ID_Cliente) )\r\n";
 
-            //    cmd_sqlite.ExecuteNonQuery();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Error al alterar la tabla: " + ex.Message);
-            //}
+                cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al alterar la tabla: " + ex.Message);
+            }
         }
-           
-        
+
+
     }
 
+    public class clientes
+    {
+        SQLiteConnection conexion_sqlite;
+        SQLiteCommand cmd_sqlite;
+
+        public void InsertarCliente(string tipoc, string doc, string nombre, string apellidoP, string apellidoM, string nacimiento, string sexo, string pais, string depto, string ciudad, string direccion, string telefono, string email)
+        {
+            try
+            {
+                conexion_sqlite = ConexionSQLite.Instancia.ObtenerConexion();
+                cmd_sqlite = conexion_sqlite.CreateCommand();
+
+                cmd_sqlite.CommandText = $"INSERT INTO Cliente (tipoC_C, Cedula, Nombre_C, ApellidoP_C, ApellidoM_C, Cedula_C, Genero_C, F_Nacimiento_C,Depto_C,Ciudad_C,Direccion_C,Mail_C,Celular_C)VALUES  ({tipoc}', '{doc}', '{nombre}', '{apellidoP}', '{apellidoM}', '{nacimiento}', '{sexo}', '{pais}', '{depto}', '{ciudad}', '{direccion}', '{telefono}', '{email})";
+                cmd_sqlite.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar el cliente: " + ex.Message);
+            }
+        }
+    }
 }
+
+
+
+
 
